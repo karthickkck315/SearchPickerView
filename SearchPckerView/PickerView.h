@@ -10,13 +10,15 @@
 
 @end
 
-@interface PickerView : UIView<UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UISearchBarDelegate>{
+@interface PickerView : UIView<UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UISearchBarDelegate,UISearchDisplayDelegate,UISearchControllerDelegate,UITextFieldDelegate>{
     
     UIPickerView *pickerView;
     UIToolbar *picketToolbar;
     UISearchBar *txtSearch;
+//    UITextField *txtSearch;
     NSArray *arrRecords;
     UIActionSheet *aac;
+    UIView *toolView;
     
     NSMutableArray *copyListOfItems;
     BOOL searching;
